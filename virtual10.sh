@@ -16,6 +16,9 @@ then
 
    	echo "import du fichier OVA dans VirtualBox   "
     vboxmanage import /home/$USER/Documents/virtual10.ova
+
+	echo "starting Virtual10"
+	vboxmanage startvm "Virtual10" 
     
 else
 	echo "NON ! Sortie"
