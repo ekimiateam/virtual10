@@ -8,8 +8,10 @@ zenity --question \
  
 if [ $? = 0 ]
 then
+	sudo apt install aria2
 	echo "OUI ! Telechargement  "
-	wget https://drive.ekimia.fr/s/yQs5Y5YBqwPRKbH/download -O /home/$USER/Documents/virtual10.ova
+	cd /home/$USER/Documents
+	aria2c magnet:?xt=urn:btih:10ff6bfbc5a7ca393e278994da5a3b2526822795&dn=virtual10.ova
 
 	echo " Installation de VirtualBox "
 	sudo apt install virtualbox
