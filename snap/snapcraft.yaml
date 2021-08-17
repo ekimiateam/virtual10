@@ -1,0 +1,14 @@
+name: virtual10 # you probably want to 'snapcraft register <name>'
+base: core18 # the base snap is the execution environment for this snap
+version: '0.1' # just for humans, typically '1.2+git' or '1.3.2'
+summary: Start a Windows 10 virtual machine in one click # 79 char long summary
+description: |
+  This will download a virtualbox Windows 10 pro image and start it
+
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs and slots
+
+parts:
+  my-part:
+    # See 'snapcraft plugins'
+    plugin: nil
